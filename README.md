@@ -1,16 +1,31 @@
-### Hi there 👋
+```python
+import os
+import json
 
-<!--
-**MistaFeast/MistaFeast** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
+info = {
+  "name": "MistaFeast",
+  "age": 15,
+  "languages": {
+    "learned": [
+      "python",
+      "javascript",
+      "lua"
+    ],
+    "learning": [
+      "C++",
+      "ASM",
+      "HTML/CSS" # Not really programming languages but whatever
+    ]
+  }
+}
 
-Here are some ideas to get you started:
+with open(os.path.join(os.path.expanduser(r"~\Documents"), "information.json"), "w") as f:
+  f.write(json.dumps(info))
+```
 
-- 🔭 I’m currently working on ...
-- 🌱 I’m currently learning ...
-- 👯 I’m looking to collaborate on ...
-- 🤔 I’m looking for help with ...
-- 💬 Ask me about ...
-- 📫 How to reach me: ...
-- 😄 Pronouns: ...
-- ⚡ Fun fact: ...
--->
+<p align="center">
+  <img src="https://github-readme-stats.vercel.app/api?username=MistaFeast&theme=dark&show_icons=true" alt="statistics" />  
+  <br>
+  <br>
+  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=MistaFeast&theme=dark&layout=compact" alt="languages" />
+</p>
